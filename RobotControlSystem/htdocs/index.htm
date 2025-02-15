@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shouqa's Robot Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <h1>Shouqa's Robot Control</h1>
+        <div class="control-panel">
+            <button onclick="sendCommand('Forward')">Forward</button>
+            <button onclick="sendCommand('Left')">Left</button>
+            <button onclick="sendCommand('Right')">Right</button>
+            <button onclick="sendCommand('Backward')">Backward</button>
+            <button onclick="sendCommand('Stop')">Stop</button>
+        </div>
+        <div id="last-command">
+            <h3>Command Sent: <span id="last-direction">None</span></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

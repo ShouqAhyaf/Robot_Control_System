@@ -1,0 +1,119 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Background style with a gradient */
+.background {
+    background: linear-gradient(135deg, #6a1b9a, #9c27b0, #2196f3);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Control panel styling for elliptical layout */
+.control-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 350px; /* Elliptical width */
+    height: 250px; /* Elliptical height */
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+/* Button styling */
+.control-panel button {
+    position: absolute;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    background-color: #000000;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.control-panel button:hover {
+    background-color: #00ffff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Positioning the buttons with proper spacing */
+.control-panel button:nth-child(1) { 
+    top: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); /* Forward button */
+}
+
+.control-panel button:nth-child(2) { 
+    top: 35%; 
+    left: 10%; 
+    transform: translateX(-50%); /* Left button */
+}
+
+.control-panel button:nth-child(3) { 
+    top: 35%; 
+    left: 90%; 
+    transform: translateX(-50%); /* Right button */
+}
+
+.control-panel button:nth-child(4) { 
+    top: 70%; 
+    left: 50%; 
+    transform: translateX(-50%); /* Backward button */
+}
+
+.control-panel button:nth-child(5) { 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Stop button in center */
+}
+
+/* Last Command styling */
+#last-command {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+/* Gradient animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
